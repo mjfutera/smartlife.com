@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmartLife By Mike Podcast</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
     <script>
     window.OneSignalDeferred = window.OneSignalDeferred || [];
@@ -28,17 +28,40 @@
     <script>
         AOS.init();
     </script>
+    <script src="scripts.js"></script>
 </head>
 <body>
-    <nav>Menu will be here</nav>
-    <div>
-        <div>AAA1</div>
+    <nav class="padding10px">Menu will be here</nav>
+    <div class="displayFlexColumn gap30px">
+        <div class="bgWhite padding20px borderRadius20px displayFlexColumn boxShadow">
+            <div class="padding10px borderRadius10px textAlignCenter">Podcast</div>
+            <div>
+                <img src="img/SmartLife.jpg" class="mainLogo">
+            </div>
+        </div>
+        <div class="bgWhite padding20px boxShadow borderRadius20px widthNumberOne">
+            Logotypy platform
+        </div>
     </div>
     <div>
         <div>BBB</div>
     </div>
     <div>
-        <div>CCC</div>
+        <!-- Newsletter -->
+        <div class="bgWhite borderRadius20px padding20px boxShadow">
+                <h2 class="bgRed">Sign in</h2>
+                <div class="displayFlexColumn">
+                    <input type="text" id="newsletter-name" name="name" placeholder="Your name" required>
+                    <input type="email" id="newsletter-email" name="email" placeholder="Your email" required>
+                </div>
+        
+                <div>
+                    <input type="checkbox" id="newsletter-terms" name="terms" required>
+                    <label for="terms" class="small-text">Approve terms and conditions</label>
+                </div>
+        
+                <button type="button" id="newsletter-signInButton" onclick="signInToNewsletter()">Sign in</button>
+        </div>
     </div>
     <div>
         <div>DDD</div>

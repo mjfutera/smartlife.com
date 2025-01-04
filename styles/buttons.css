@@ -1,0 +1,27 @@
+/* input                   {background-color: green;} */
+/* input[type="text"]      {} */
+/* input[type="password"]  {} */
+/* input[type="email"]  {} */
+input[type="text"], input[type="password"],input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border-color: white;
+    text-align: center;
+    border-style: hidden;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="password"]:focus,input[type="email"]:focus {
+    border-style: solid;
+    border-color: black;
+}
+
+/* input[type="text"]:hover, input[type="password"]:hover,input[type="email"]:hover {
+    background-color: green;
+} */
+
+/* input[type="button"]    {} */
+/* input[type="checkbox"]  {} */
