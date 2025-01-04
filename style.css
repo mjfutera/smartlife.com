@@ -9,6 +9,7 @@ html, body{
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+    /* filter: grayscale(100%); */
 }
 
 body>div {
