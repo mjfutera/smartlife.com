@@ -33,36 +33,59 @@
     <script src="scripts/loadData.js"></script>
 </head>
 <body>
-    <nav class="padding10px">Menu will be here</nav>
-    <div class="displayFlexColumn gap30px">
-        <div class="padding20px borderRadius20px displayFlexColumnToRow displayFlexCenter boxShadow minWidth bgWhite">
+    <nav class="padding10px">
+        Menu will be here
+    </nav>
+    <div class="displayFlexColumn gap30px" id="introLogo">
+        <div class="padding20px borderRadius20px displayFlexColumnToRow displayFlexCenter boxShadow minWidth bgWhite" onclick='window.location.href = "#listenOn";'>
             <img src="img/SmartLife.jpg" class="mainLogo">
         </div>
     </div>
-    <div class="displayFlexColumn gap30px">
-        <div class="padding10px borderRadius10px textAlignCenter boxShadow bgWhite">You can listen podcast on all platforms</div>
-        <div class="bgWhite padding20px boxShadow borderRadius20px minWidth displayFlexRow displayFlexRowWrap displayFlexCenter gap10px" id="podcastingPlatforms">
-            <a href="#" class="platformLogoLink"><img src="img/platforms/spotify.png" class="platformLogo"></a>
-            <a href="#" class="platformLogoLink"><img src="img/platforms/apple.png" class="platformLogo"></a>
-            <a href="#" class="platformLogoLink"><img src="img/platforms/youtubemusic.png" class="platformLogo"></a>
-            <a href="#" class="platformLogoLink"><img src="img/platforms/amazon.png" class="platformLogo"></a>
-            <a href="#" class="platformLogoLink"><img src="img/platforms/deezer.png" class="platformLogo"></a>
-            <div class="platformLogoLink"><img src="img/platforms/more.png" class="platformLogo"></div>
+    <div class="displayFlexColumn gap30px" id="listenOn">
+        <div class="bgWhite padding10px borderRadius10px textAlignCenter boxShadow minWidth">
+            <div class="animated-text">You can listen podcast on all platforms</div>
+            <div class="displayFlexRow displayFlexRowWrap displayFlexCenter gap10px" id="podcastingPlatforms">
+                <a href="#" class="platformLogoLink"><img src="img/platforms/spotify.png" class="platformLogo"></a>
+                <a href="#" class="platformLogoLink"><img src="img/platforms/apple.png" class="platformLogo"></a>
+                <a href="#" class="platformLogoLink"><img src="img/platforms/youtubemusic.png" class="platformLogo"></a>
+                <a href="#" class="platformLogoLink"><img src="img/platforms/amazon.png" class="platformLogo"></a>
+                <a href="#" class="platformLogoLink"><img src="img/platforms/deezer.png" class="platformLogo"></a>
+                <div class="platformLogoLink"><img src="img/platforms/more.png" class="platformLogo"></div>
+            </div>
         </div>
     </div>
-    <div>
-        <div class="bgWhite padding20px boxShadow borderRadius20px minWidth">About podcast</div>
+    <div id="aboutPodcast">
+        <div class="bgWhite padding20px boxShadow borderRadius20px minWidth">
+            <div class="animated-text">About podcast</div>
+            <div>Welcome to Smart Life By Mike, the podcast that's your ultimate guide for a smarter, more fulfilling life. From streamlining your daily routine and managing your home, to advancing your career, raising kids, and building a strong financial foundation, this podcast covers every aspect of your life. Whether you're looking for practical tips on managing your finances, learning new ways to save money, or exploring exciting new income opportunities, Smart Life By Mike offers actionable advice and expert insights to help you live your best life.</div>
+        </div>
     </div>
-    <div>
+    <div id="aboutMe">
         <div class="bgWhite padding20px boxShadow borderRadius20px minWidth">About me</div>
     </div>
-    <div>
-        <div class="bgWhite padding20px boxShadow borderRadius20px minWidth">Social Media</div>
+    <div id="socialMedia">
+        <div class="bgWhite padding20px boxShadow borderRadius20px minWidth">
+            <div class="animated-text">
+                Social Media
+            </div>
+            <div class="socialMediaPanel displayFlexRow displayFlexCenter displayFlexRowWrap gap10px">
+                <a href="http://"><img src="img/socialMedia/facebook.png" alt="" srcset="" class="socialMediaPic"></a>
+                <a href="http://"><img src="img/socialMedia/instagram.png" alt="" srcset="" class="socialMediaPic"></a>
+                <a href="http://"><img src="img/socialMedia/twitter.png" alt="" srcset="" class="socialMediaPic"></a>
+                <a href="http://"><img src="img/socialMedia/youtube.png" alt="" srcset="" class="socialMediaPic"></a>
+                <a href="http://"><img src="img/socialMedia/threads.png" alt="" srcset="" class="socialMediaPic"></a>
+                <a href="http://"><img src="img/socialMedia/whatsapp.png" alt="" srcset="" class="socialMediaPic"></a>
+                <a href="http://"><img src="img/socialMedia/telegram.png" alt="" srcset="" class="socialMediaPic"></a>
+                <a href="http://"><img src="img/socialMedia/newsletter.png" alt="" srcset="" class="socialMediaPic"></a>
+                <img src="img/socialMedia/push.png" alt="" srcset="" class="socialMediaPic" onclick='OneSignal.push(["registerForPushNotifications"])'>
+                <a href="http://"><img src="img/socialMedia/rss.png" alt="" srcset="" class="socialMediaPic"></a>
+            </div>
+        </div>
     </div>
-    <div>
+    <div id="newsletter">
         <!-- Newsletter -->
-        <div class="bgWhite borderRadius20px padding20px boxShadow minWidth">
-                <h2 class="bgRed">Sign in to newsletter</h2>
+        <div class="bgWhite borderRadius20px padding20px boxShadow minWidth displayFlexColumn displayFlexCenter">
+                <div class="">Sign in to newsletter</div>
                 <div class="displayFlexColumn">
                     <input type="text" id="newsletter-name" name="name" placeholder="Your name" required>
                     <input type="email" id="newsletter-email" name="email" placeholder="Your email" required>
@@ -76,16 +99,16 @@
                 <button type="button" id="newsletter-signInButton" onclick="signInToNewsletter()">Sign in</button>
         </div>
     </div>
-    <div>
+    <div id="previousEpisodes">
         <div class="bgWhite padding20px boxShadow borderRadius20px minWidth">Previous episodes</div>
     </div>
-    <div>
+    <div id="incomingEpisodes">
         <div class="bgWhite padding20px boxShadow borderRadius20px minWidth">Incoming episodes</div>
     </div>
-    <div>
+    <div id="cooperate">
         <div class="bgWhite padding20px boxShadow borderRadius20px minWidth">Want to cooperate?</div>
     </div>
-    <div>
+    <div id="contact">
         <div class="bgWhite padding20px boxShadow borderRadius20px minWidth">Contact</div>
     </div>
 </body>
