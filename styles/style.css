@@ -45,9 +45,14 @@ nav {
 }
 
 .mainLogo               {border-radius: 100%;max-width: 50vh;}
+.platformLogo           {max-width: 300px;}
+.platformLogoLink       {display: flex; flex: 1 1 calc(100%);box-sizing: border-box; justify-content: center;align-items: center;}
 
 .displayFlexColumnToRow {display: flex;flex-direction: column;}
 .displayFlexColumn      {display: flex;flex-direction: column;}
+.displayFlexRow         {display: flex;flex-direction: row;}
+
+.displayFlexCenter      {justify-content: center;align-items: center;}
 
 .displayFlexRowWrap     {flex-wrap: wrap;}
 .displayFlexRowNoWrap   {flex-wrap: nowrap;}
@@ -67,14 +72,14 @@ nav {
 .bgRed:hover            {background-color: pink;}      
 .bgWhite                {background-color: white;}
 
-.widthNumberOne         {width: 250px;}
+.minWidth               {min-width: 100%; box-sizing: border-box;}
 
 .textAlignCenter        {text-align: center;}
 
 .boxShadow              {
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(197, 131, 131, 0.75);
 }
 
 /* Media  */
@@ -90,15 +95,14 @@ nav {
 
 /* Tablety w układzie pionowym */
 @media (min-width: 426px) {
-    .widthNumberOne{
-        width: 400px;
-    }
+
 }
 
 /* Tablety w układzie poziomym */
 @media (min-width: 769px) {
-    .widthNumberOne{
-        width: 75%;
+    .minWidth{
+        min-width: auto;
+        width: 500px;
     }
 }
 

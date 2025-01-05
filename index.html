@@ -28,27 +28,31 @@
     <script>
         AOS.init();
     </script>
-    <script src="scripts.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/loadData.js"></script>
 </head>
 <body>
     <nav class="padding10px">Menu will be here</nav>
     <div class="displayFlexColumn gap30px">
-        <div class="bgWhite padding20px borderRadius20px displayFlexColumn boxShadow">
-            <div class="padding10px borderRadius10px textAlignCenter">Podcast</div>
-            <div>
-                <img src="img/SmartLife.jpg" class="mainLogo">
-            </div>
-        </div>
-        <div class="bgWhite padding20px boxShadow borderRadius20px widthNumberOne">
-            Logotypy platform
+        <div class="padding20px borderRadius20px displayFlexColumnToRow displayFlexCenter boxShadow minWidth bgWhite">
+            <img src="img/SmartLife.jpg" class="mainLogo">
         </div>
     </div>
-    <div>
-        <div>BBB</div>
+    <div class="displayFlexColumn gap30px">
+        <div class="padding10px borderRadius10px textAlignCenter boxShadow bgWhite">You can listen podcast on all platforms</div>
+        <div class="bgWhite padding20px boxShadow borderRadius20px minWidth displayFlexRow displayFlexRowWrap displayFlexCenter gap10px" id="podcastingPlatforms">
+            <a href="#" class="platformLogoLink"><img src="img/platforms/spotify.png" class="platformLogo"></a>
+            <a href="#" class="platformLogoLink"><img src="img/platforms/apple.png" class="platformLogo"></a>
+            <a href="#" class="platformLogoLink"><img src="img/platforms/youtubemusic.png" class="platformLogo"></a>
+            <a href="#" class="platformLogoLink"><img src="img/platforms/amazon.png" class="platformLogo"></a>
+            <a href="#" class="platformLogoLink"><img src="img/platforms/deezer.png" class="platformLogo"></a>
+            <a href="#" class="platformLogoLink"><img src="img/platforms/more.png" class="platformLogo"></a>
+        </div>
     </div>
     <div>
         <!-- Newsletter -->
-        <div class="bgWhite borderRadius20px padding20px boxShadow">
+        <div class="bgWhite borderRadius20px padding20px boxShadow minWidth">
                 <h2 class="bgRed">Sign in</h2>
                 <div class="displayFlexColumn">
                     <input type="text" id="newsletter-name" name="name" placeholder="Your name" required>
@@ -64,10 +68,10 @@
         </div>
     </div>
     <div>
-        <div>DDD</div>
+        <div class="bgWhite padding20px boxShadow borderRadius20px minWidth">DDD</div>
     </div>
     <div>
-        <div>EEE</div>
+        <div class="bgWhite padding20px boxShadow borderRadius20px minWidth">EEE</div>
     </div>
 </body>
 </html>
