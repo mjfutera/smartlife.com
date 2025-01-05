@@ -45,8 +45,15 @@ nav {
 }
 
 .mainLogo               {border-radius: 100%;max-width: 50vh;}
-.platformLogo           {max-width: 300px;}
-.platformLogoLink       {display: flex; flex: 1 1 calc(100%);box-sizing: border-box; justify-content: center;align-items: center;}
+.platformLogo           {width: 300px;}
+.platformLogoLink       {
+                            display: flex; 
+                            flex: 1 1 calc(100%);
+                            box-sizing: border-box; 
+                            justify-content: center;
+                            cursor: pointer;
+                            align-items: center;
+                        }
 
 .displayFlexColumnToRow {display: flex;flex-direction: column;}
 .displayFlexColumn      {display: flex;flex-direction: column;}
@@ -72,7 +79,7 @@ nav {
 .bgRed:hover            {background-color: pink;}      
 .bgWhite                {background-color: white;}
 
-.minWidth               {min-width: 100%; box-sizing: border-box;}
+.minWidth               {width: 100%; box-sizing: border-box;}
 
 .textAlignCenter        {text-align: center;}
 
@@ -101,7 +108,6 @@ nav {
 /* Tablety w układzie poziomym */
 @media (min-width: 769px) {
     .minWidth{
-        min-width: auto;
         width: 500px;
     }
 }
