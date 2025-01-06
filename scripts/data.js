@@ -14,50 +14,5 @@ const data = {
             "keyWords": "keywords",
             "noFollow": false
         }
-    ],
-    "platforms": {
-        "spotify": {
-            "logo": "logolink",
-            "url": "http://onet.pl",
-            "title": "spotify Title",
-            "description": "description"
-        },
-        "applePodcasts": {
-            "logo": "logolink",
-            "url": "url",
-            "title": "title",
-            "description": "description"
-        },
-        "youTube": {
-            "logo": "logolink",
-            "url": "url",
-            "title": "title",
-            "description": "description"
-        },
-        "amazonPodcasts": {
-            "logo": "logolink",
-            "url": "url",
-            "title": "title",
-            "description": "description"
-        },
-        "pandoraPodcasts": {
-            "logo": "logolink",
-            "url": "url",
-            "title": "title",
-            "description": "description"
-        },
-        "listenNotes": {
-            "logo": "logolink",
-            "url": "url",
-            "title": "title",
-            "description": "description"
-        },
-        "castBoxPodcasts": {
-            "logo": "logolink",
-            "url": "url",
-            "title": "title",
-            "description": "description"
-        }
-    },
-    "logo": "logo"
+    ]
 }

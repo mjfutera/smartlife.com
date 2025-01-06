@@ -57,13 +57,23 @@
         </div>
     </div>
     <div id="aboutPodcast">
-        <div class="bgWhite padding20px boxShadow borderRadius20px minWidth">
-            <div class="animated-text">About podcast</div>
+        <div class="bgWhite padding20px boxShadow borderRadius20px minWidth gap30px">
+            <div class="animated-text textSizePlus10">About podcast</div>
             <div>Welcome to Smart Life By Mike, the podcast that's your ultimate guide for a smarter, more fulfilling life. From streamlining your daily routine and managing your home, to advancing your career, raising kids, and building a strong financial foundation, this podcast covers every aspect of your life. Whether you're looking for practical tips on managing your finances, learning new ways to save money, or exploring exciting new income opportunities, Smart Life By Mike offers actionable advice and expert insights to help you live your best life.</div>
         </div>
     </div>
     <div id="aboutMe">
-        <div class="bgWhite padding20px boxShadow borderRadius20px minWidth">About me</div>
+        <div class="bgWhite padding20px boxShadow borderRadius20px minWidth">
+            <div>
+                About me
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
     </div>
     <div id="socialMedia">
         <div class="bgWhite padding20px boxShadow borderRadius20px minWidth">
@@ -88,17 +98,14 @@
         <!-- Newsletter -->
         <div class="bgWhite borderRadius20px padding20px boxShadow minWidth displayFlexColumn displayFlexCenter">
                 <div class="">Sign in to newsletter</div>
-                <div class="displayFlexColumn">
-                    <input type="text" id="newsletter-name" name="name" placeholder="Your name" required>
-                    <input type="email" id="newsletter-email" name="email" placeholder="Your email" required>
-                </div>
-        
                 <div>
-                    <input type="checkbox" id="newsletter-terms" name="terms" required>
-                    <label for="terms" class="small-text">Approve terms and conditions</label>
+                    <form id="emailForm">
+                        <label for="email">Zapisz się na newsletter:</label>
+                        <input type="email" id="email" name="email" placeholder="Twój email" required>
+                        <button type="submit">Subskrybuj</button>
+                    </form>
+                    
                 </div>
-        
-                <button type="button" id="newsletter-signInButton" onclick="signInToNewsletter()">Sign in</button>
         </div>
     </div>
     <div id="previousEpisodes">
